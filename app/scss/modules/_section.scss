@@ -1,0 +1,48 @@
+.section {
+    position: relative;
+    padding: ($space * 2) 0;
+}
+
+    .section-primary {
+        background-color: $brand-primary;
+    }
+
+    .section-pointer {
+
+        // make this responsive by using an svg
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 150px 0 0 450px;
+            border-color: transparent transparent transparent #fff;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 150px 450px;
+            border-color: transparent transparent #fff transparent;
+        }
+    }
+
+@include mq($from: tablet) {
+    .section {
+        padding: ($space * 3) 0;
+    }
+}
+
+@include mq($from: desktop) {
+    .section {
+        padding: ($space * 4) 0;
+    }
+}
