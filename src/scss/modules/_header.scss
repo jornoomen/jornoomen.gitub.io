@@ -1,8 +1,10 @@
 .header {
     background-color: $brand-primary;
+    text-align: center;
 }
 
     .header-logo {
+        display: inline-block;
         width: 240px;
         margin-top: 30px;
 
@@ -27,3 +29,9 @@
             letter-spacing: 5px;
         }
     }
+
+@include mq($from: tablet ) {
+    .header {
+        text-align: left;
+    }
+}
