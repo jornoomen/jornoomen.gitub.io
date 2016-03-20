@@ -17,7 +17,6 @@
     "style-loader": "^0.13.0",
     "sass-loader": "^3.2.0",
     "node-sass": "^3.4.2",
-    "html-webpack-plugin": "^2.10.0",
     "webpack-dev-server": "^1.14.1"
   }
 }
