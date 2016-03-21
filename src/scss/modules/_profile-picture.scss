@@ -28,11 +28,17 @@
     .profile-picture-full {
         display: block;
         width: 100%;
-        max-width: 400px;
+        max-width: 360px;
         margin: 0 auto;
     }
 
     .profile-picture-mugshot {
         display: none;
+    }
+}
+
+@include mq($from: 1300px) {
+    .profile-picture-full {
+        max-width: 400px;
     }
 }
