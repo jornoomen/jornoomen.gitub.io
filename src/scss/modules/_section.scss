@@ -27,13 +27,13 @@
 
 @include mq($from: tablet) {
     .section {
-        padding: ($space * 3) 0;
+        padding: ($space * 2) 0 ($space * 3) 0;
     }
 }
 
 @include mq($from: desktop) {
     .section {
-        padding: ($space * 4) 0;
+        padding: ($space * 3) 0 ($space * 4) 0;
     }
 
     .section-pointer-no-padding {
