@@ -1,0 +1,13 @@
+.footer {
+    padding: $space 0;
+    background-color: $brand-secondary;
+    color: #fff;
+
+    span {
+        white-space: nowrap;
+    }
+}
+    .footer-title {
+        text-transform: uppercase;
+        font-weight: bold;
+    }

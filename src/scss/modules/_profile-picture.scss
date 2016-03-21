@@ -1,0 +1,38 @@
+.profile-picture {
+    text-align: center;
+}
+
+.profile-picture-full {
+    display: none;
+}
+
+.profile-picture-mugshot {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 5px solid $brand-primary;
+    background-color: #fff;
+    max-width: 150px;
+    box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+    z-index: 1;
+}
+
+@include mq($from: desktop) {
+    .profile-picture {
+        display: block;
+        background: radial-gradient(ellipse at center,  rgba(28,61, 122, 0.3) 0%, $brand-primary 70%);
+        margin-top: -100px;
+    }
+
+    .profile-picture-full {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .profile-picture-mugshot {
+        display: none;
+    }
+}

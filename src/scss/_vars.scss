@@ -2,7 +2,7 @@
  * Paths
  */
 
-$base-path:                        '../' !default;
+$base-path:                        '../../assets/' !default;
 $font-path:                        $base-path + 'fonts/' !default;
 $image-path:                       $base-path + 'images/'!default;
 
@@ -50,6 +50,8 @@ $space:                             40px !default;
 
 $font-size-small:                   14px !default;
 $font-size-base:                    16px !default;
+$font-size-large:                   20px !default;
+$font-size-larger:                  24px !default;
 $line-height-base:                  1.5 !default;
 $font-family-sans-serif:            "Montserrat", sans-serif !default;
 $font-family-brand:                 $font-family-sans-serif;

@@ -9,9 +9,8 @@ npm run server
 
 #Production
 
-This builds the project by creating a dir /build/
-Deploy this directory to the production environment.
-By doing it this way no unnecessary node modules are on the server. 
+This builds the sass / js by creating a dir /build/
+This way the node_modules directory can be avoided in production deployment. 
 
 ```
 npm run build

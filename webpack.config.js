@@ -1,15 +1,8 @@
 var ExtractTextPlugin = require("extract-text-webpack-plugin"),
-    path = require('path'),
-    HtmlWebpackPlugin = require('html-webpack-plugin');
-
-var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
-    template: __dirname + '/app/index.html',
-    filename: 'index.html',
-    inject: 'body'
-});
+    path = require('path');
 
 var sassOptions = {
-    outputStyle: 'nested',
+    outputStyle: 'compressed',
     includePaths: [
         path.resolve(__dirname, 'node_modules/bootstrap-sass/assets/stylesheets')
     ]
@@ -17,10 +10,12 @@ var sassOptions = {
 
 module.exports = {
     entry : [
-        __dirname + '/app/scss/app.scss'
+        __dirname + '/src/scss/app.scss'
     ],
+    devtool: 'source-map',
     output: {
         path: __dirname + "/build/",
+        publicPath: "/build/",
         filename: 'js/app.js'
     },
     resolve: {
@@ -36,7 +31,6 @@ module.exports = {
         }]
     },
     plugins: [
-        new ExtractTextPlugin('css/app.css'),
-        HTMLWebpackPluginConfig
+        new ExtractTextPlugin('css/app.css')
     ]
 };

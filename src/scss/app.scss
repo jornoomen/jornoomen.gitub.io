@@ -5,6 +5,7 @@
 @import '~sass-mq/mq';
 
 // Base
+@import "base/fonts";
 @import "base/toplevel";
 
 // Modules
@@ -12,3 +13,5 @@
 @import "modules/section";
 @import "modules/heading";
 @import "modules/footer";
+@import "modules/profile-picture";
+@import "modules/social";
