@@ -9,29 +9,19 @@
 
     .section-pointer {
 
-        // make this responsive by using an svg
-        &:before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 150px 0 0 450px;
-            border-color: transparent transparent transparent #fff;
-        }
-
         &:after {
             content: "";
             position: absolute;
             bottom: 0;
-            right: 0;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 0 0 150px 450px;
-            border-color: transparent transparent #fff transparent;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            background: url($image-path + 'shape.svg') center bottom no-repeat;
+            pointer-events: none;
+        }
+
+        &.section-pointer-primary:after {
+            background-image: url($image-path + 'shape-primary.svg');
         }
     }
 
@@ -46,7 +36,7 @@
         padding: ($space * 4) 0;
     }
 
-    .section-pointer {
+    .section-pointer-no-padding {
         padding-bottom: 0;
     }
 }
