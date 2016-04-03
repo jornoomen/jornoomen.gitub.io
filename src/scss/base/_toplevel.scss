@@ -13,3 +13,11 @@ body {
     height: auto;
     min-height: 100%;
 }
+
+a {
+    text-decoration: underline;
+}
+
+.no-prominent-links a {
+    text-decoration: none;
+}
