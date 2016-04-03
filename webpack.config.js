@@ -14,7 +14,7 @@ module.exports = {
     ],
     devtool: 'source-map',
     output: {
-        path: __dirname + "/build/",
+        path: __dirname + "/assets/build/",
         publicPath: "/build/",
         filename: 'js/app.js'
     },
